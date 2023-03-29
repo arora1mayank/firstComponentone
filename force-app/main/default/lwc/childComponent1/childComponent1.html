@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="child component1" icon-name="standard:contact">
+        <!-- <lightning-input label="name" value="Mayank"></lightning-input> -->
+        <!-- <lightning-button label="get value" onclick={handleClick}></lightning-button> -->
+        <template if:true={isVisible}>
+            <p>This is text by conditional rendering.</p>
+        </template>
+        <lightning-button label="show text" onclick={show}></lightning-button>
+    </lightning-card>
+</template>
